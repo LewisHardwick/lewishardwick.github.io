@@ -1,0 +1,88 @@
+body{
+background-color: #c8dbd3;
+
+}
+
+header {
+ text-align: center;
+ font-size:100px;
+ font-family: 'Kaushan Script', cursive;
+
+}
+
+.ball {
+ position: relative;
+ background-color: #b5380e;
+ width: 190px;
+ height: 190px;
+ border-radius: 50%;
+ animation-name: bounce;
+ animation-duration: 1.75s;
+ animation-iteration-count: infinite;
+ margin:50px auto;
+
+}
+@keyframes bounce {
+ 0%{
+   top:0px;
+
+ }50% {
+   top:300px;
+   width:270px;
+
+}
+
+ 100%{
+   top: 0px;
+
+
+ }
+
+
+}
+
+.shadow {
+  opacity:0.1px;
+  height: 25px;
+  width: 190px;
+  background-color: rgba(110, 107, 107, 0.1);
+  margin:50px auto;
+  top:320px;
+  border-radius:50%;
+  position:relative;
+  animation-name: shadow;
+  animation-duration: 1.75s;
+  animation-iteration-count: infinite;
+ }@keyframes shadow {
+   0% {
+     top:320px;
+   }
+     50%{
+     top:320px;
+     width: 330px;
+   }
+   }100%{
+     top:320px;
+    width:0px;
+   }
+
+
+
+a {
+  text-decoration: underline;
+  color:black;
+  font-family: 'Kaushan Script', cursive;
+}
+a:hover{
+  color: rgba(110, 107, 107, 1)
+
+}
+footer {
+  position:relative;
+  height:10%;
+  text-align: right;
+  color: black;
+  font-family: 'Kaushan Script', cursive;
+  top:500px;
+  right:50px;
+}
